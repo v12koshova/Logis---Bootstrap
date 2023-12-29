@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="./assets/css/fontello.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body id="getAQuote">
+
+  <header id="header" class="header fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-xl">
+        <h1><a class="navbar-brand fw-bold" href="#">Logis</a></h1>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+          <button  data-bs-toggle="modal" data-bs-target="#modalQuote" class="btn btn-primary ms-4">Get a Quote</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="v12-main">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <h2 class="text-white display-5 fw-bold mb-4 data-aos" data-aos="fade-up">Your Lightning Fast Delivery Partner</h2>
+            <p class=" mb-4" data-aos="fade-up" data-aos-delay="100">Facere distinctio molestiae nisi fugit tenetur repellat non praesentium nesciunt optio quis sit odio nemo quisquam. eius quos reiciendis eum vel eum voluptatem eum maiores eaque id optio ullam occaecati odio est possimus vel reprehenderit</p>
+            <form class="input-group mb-5" data-aos="fade-up" data-aos-delay="200">
+              <input type="text" class="v12-form form-control py-3 " placeholder="ZIP code"
+                aria-label="ZIP code" aria-describedby="button-addon2">
+              <button class="btn btn-primary text-white" type="button">Button</button>
+            </form>
+            <div class="row" data-aos="fade-up" data-aos-delay="300">
+              <div class="col-6 col-lg-3 text-center">
+                <p class="v12-static fs-2 fw-bold">232</p>
+                <p class="fw-bold">Clients</p>
+              </div>
+              <div class="col-6 col-lg-3 text-center">
+                <p class="v12-static fs-2 fw-bold">521</p>
+                <p class="fw-bold">Projects</p>
+              </div>
+              <div class="col-6 col-lg-3 text-center">
+                <p class="v12-static fs-2 fw-bold">1 453</p>
+                <p class="fw-bold">Support</p>
+              </div>
+              <div class="col-6 col-lg-3 text-center">
+                <p class="v12-static fs-2 fw-bold">32</p>
+                <p class="fw-bold">Workers</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2" data-aos="zoom-out">
+            <img class="img-fluid" src="./assets/img/hero-img.svg" alt="Delivery img">
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="container">
+        <div class="row row-gap-4">
+          <div class="v12-service-item col-md-6 col-lg-4 d-flex align-items-start gap-4" data-aos="fade-up">
+            <div>
+              <svg width="60px" height="60px" class="v12-icon icon-truck">
+                <use xlink:href="./assets/img/sprite.svg#icon-truck"></use>
+              </svg>
+
+            </div>
+            <div>
+              <h4 class="fw-bold">Lorem Ipsum</h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+                non
+                provident</p>
+              <a href="#" class="v12-service-link fw-bold">Learn more</a>
+            </div>
+          </div>
+          <div class="v12-service-item col-md-6 col-lg-4 d-flex align-items-start gap-4" data-aos="fade-up" data-aos-delay="100">
+            <div>
+              <svg width="60px" height="60px" class="v12-icon icon-truck">
+                <use xlink:href="./assets/img/sprite.svg#icon-cart-plus"></use>
+              </svg>
+
+            </div>
+            <div>
+              <h4 class="fw-bold">Lorem Ipsum</h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+                non
+                provident</p>
+              <a href="#" class="v12-service-link fw-bold">Learn more</a>
+            </div>
+          </div>
+          <div class="v12-service-item col-md-6 col-lg-4 d-flex align-items-start gap-4" data-aos="fade-up" data-aos-delay="200">
+            <div>
+              <svg width="60px" height="60px" class="v12-icon icon-truck">
+                <use xlink:href="./assets/img/sprite.svg#icon-delivery_dining"></use>
+              </svg>
+
+            </div>
+            <div>
+              <h4 class="fw-bold">Lorem Ipsum</h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+                non
+                provident</p>
+              <a href="#" class="v12-service-link fw-bold">Learn more</a>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6 mb-3">
+            <h3 class="fw-bold text">About Us</h3>
+            <p class="mb-4 mb-md-5">Dolor iure expedita id fuga asperiores qui sunt consequatur minima. Quidem voluptas
+              deleniti. Sit quia
+              molestiae quia quas qui magnam itaque veritatis dolores. Corrupti totam ut eius incidunt reiciendis
+              veritatis asperiores placeat.</p>
+            <div>
+              <div class="d-flex gap-4 mb-2" data-aos="fade-up" data-aos-delay="100">
+                <div>
+                  <svg width="45px" height="50px" fill="#0d42ff" class="icon icon-networking-svgrepo-com">
+                    <use xlink:href="./assets/img/sprite.svg#icon-networking"></use>
+                  </svg>
+                </div>
+
+                <div>
+                  <h6 class="fw-bold">Ullamco laboris nisi ut aliquip consequat</h6>
+                  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                </div>
+              </div>
+              <div class="d-flex gap-4 mb-2" data-aos="fade-up" data-aos-delay="200">
+                <div >
+                  <svg width="45px" height="50px" fill="#0d42ff" class="icon icon-signal">
+                    <use xlink:href="./assets/img/sprite.svg#icon-signal"></use>
+                  </svg>
+                </div>
+
+                <div>
+                  <h6 class="fw-bold">Ullamco laboris nisi ut aliquip consequat</h6>
+                  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                </div>
+              </div>
+              <div class="d-flex gap-4 mb-2" data-aos="fade-up" data-aos-delay="300">
+                <div>
+                  <svg width="45px" height="50px" fill="#0d42ff" class="icon icon-networking-svgrepo-com">
+                    <use xlink:href="./assets/img/sprite.svg#icon-road"></use>
+                  </svg>
+                </div>
+
+                <div>
+                  <h6 class="fw-bold">Ullamco laboris nisi ut aliquip consequat</h6>
+                  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 position-relative d-flex justify-content-center align-items-center" data-aos="zoom-out">
+
+            <button type="button" class="btn v12-btn d-flex justify-content-center align-items-center position-absolute"
+              data-bs-toggle="modal" data-bs-target="#modalVideo">
+              <div class="v12-btn-animation"></div>
+              <div class="v12-triangle">
+              </div>
+            </button>
+            <img class="img-fluid" src="./assets/img/about.jpg" alt="Delivery team">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container" data-aos="fade-up">
+        <div class="row mb-3">
+          <div class="col-12 position-relative">
+            <span class="v12-shadow d-none d-sm-block fw-bold text-center text-uppercase position-absolute">Our services</span>
+            <h2 class="text-uppercase text fw-bold text-center pb-4 mb-4 v12-decoration">Our services</h2>
+          </div>
+        </div>
+        <div class="row gy-4">
+          <div class="col-md-6 col-lg-4"  data-aos="fade-up" data-aos-delay="100">
+            <div class="card v12-card">
+              <div class="card-img-box">
+                <img src="./assets/img/storage-service.jpg" class="card-img-top" alt="Storage illustration">
+              </div>
+              <div class="card-body">
+                <h3 class="text-uppercase fs-5 fw-bold"><a href="#" class="text">Storage</a></h3>
+                <p class="card-text">Cumque eos in qui numquam. Aut aspernatur perferendis sed atque quia voluptas
+                  quisquam repellendus temporibus itaqueofficiis odit</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card v12-card">
+              <div class="card-img-box">
+                <img src="./assets/img/logistics-service.jpg" class="card-img-top" alt="Logistic illustration">
+              </div>
+              <div class="card-body">
+                <h3 class="text-uppercase fs-5 fw-bold"><a href="#" class="text">Logistics</a></h3>
+                <p class="card-text">Asperiores provident dolor accusamus pariatur dolore nam id audantium ut et iure incidunt molestiae dolor ipsam ducimus occaecati nisi</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card v12-card">
+              <div class="card-img-box">
+                <img src="./assets/img/cargo-service.jpg" class="card-img-top" alt="Cargo illustration">
+              </div>
+              <div class="card-body">
+                <h3 class="text-uppercase fs-5 fw-bold"><a href="#" class="text">Cargo</a></h3>
+                <p class="card-text">Dicta quam similique quia architecto eos nisi aut ratione aut ipsum reiciendis sit doloremque oluptatem aut et molestiae ut et nihil</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="card v12-card">
+              <div class="card-img-box">
+                <img src="./assets/img/trucking-service.jpg" class="card-img-top" alt="Trucking illustration">
+              </div>
+              <div class="card-body">
+                <h3 class="text-uppercase fs-5 fw-bold"><a href="#" class="text">Trucking</a></h3>
+                <p class="card-text">Dicta quam similique quia architecto eos nisi aut ratione aut ipsum reiciendis sit doloremque oluptatem aut et molestiae ut et nihil</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="card v12-card">
+              <div class="card-img-box">
+                <img src="./assets/img/packaging-service.jpg" class="card-img-top" alt="Packaging illustration">
+              </div>
+              <div class="card-body">
+                <h3 class="text-uppercase fs-5 fw-bold"><a href="#" class="text">Packaging</a></h3>
+                <p class="card-text">Illo consequuntur quisquam delectus praesentium modi dignissimos facere vel cum onsequuntur maiores beatae consequatur magni voluptates</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="card v12-card">
+              <div class="card-img-box">
+                <img src="./assets/img/warehousing-service.jpg" class="card-img-top" alt="Warehousing illustration">
+              </div>
+              <div class="card-body">
+                <h3 class="text-uppercase fs-5 fw-bold"><a href="#" class="text">Warehousing</a></h3>
+                <p class="card-text">Quas assumenda non occaecati molestiae. In aut earum sed natus eatae in vero. Ab modi quisquam aut nostrum unde et qui est non quo nulla</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="v12-call-to-action" >
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center text-white">
+            <h2 class="fw-bold mb-3">Call To Action</h2>
+            <p class=" mb-4"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#getAQuote" class="btn btn-outline-light btn-lg">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="container" data-aos="fade-up">
+        <div class="row align-items-center mb-4 mb-md-5" data-aos="fade-up">
+          <div class="col-md-5 mb-4 mb-lg-0">
+            <img src="./assets/img/features-1.jpg" alt="Pacage illustration" class="img-fluid">
+          </div>
+          <div class="col-md-7">
+            <h3 class="text fw-semibold mb-3">Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.
+            </h3>
+            <p class="mb-4 fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ul>
+              <li class="mb-2"><i class="icon-check text-primary"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li class="mb-2"><i class="icon-check text-primary"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li class="mb-2"><i class="icon-check text-primary"></i>Ullam est qui quos consequatur eos accusamus.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row align-items-center mb-4 mb-sm-5" data-aos="fade-up">
+          <div class="col-md-5 order-md-2  mb-4 mb-lg-0">
+            <img src="./assets/img/features-2.jpg" alt="Pacage illustration" class="img-fluid">
+          </div>
+          <div class="col-md-7 order-md-1">
+            <h3 class="text fw-semibold mb-3">Corporis temporibus maiores provident</h3>
+            <p class="mb-3 fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+        </div>
+        <div class="row align-items-center mb-4 mb-sm-5" data-aos="fade-up">
+          <div class="col-md-5 mb-4 mb-lg-0">
+            <img src="./assets/img/features-3.jpg" alt="Pacage illustration" class="img-fluid">
+          </div>
+          <div class="col-md-7 order-md-2">
+            <h3 class="text fw-semibold mb-3">Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas
+            </h3>
+            <p class="mb-4 ">Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+            <ul>
+              <li class="mb-2"><i class="icon-check text-primary"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li class="mb-2"><i class="icon-check text-primary"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li class="mb-2"><i class="icon-check text-primary"></i>Ullam est qui quos consequatur eos accusamus.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row align-items-center mb-4 mb-sm-5" data-aos="fade-up">
+          <div class="col-md-5 order-md-1 mb-4 mb-lg-0">
+            <img src="./assets/img/features-4.jpg" alt="Pacage illustration" class="img-fluid">
+          </div>
+          <div class="col-md-7">
+            <h3 class="text fw-semibold mb-3">Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in
+            </h3>
+            <p class="mb-3 fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="container" data-aos="fade-up">
+        <div class="row mb-4">
+          <div class="col-12 position-relative">
+            <span class="v12-shadow fw-bold text-center text-uppercase position-absolute">Pricing</span>
+            <h2 class="text-uppercase text text-center fw-bold pb-4 mb-5 v12-decoration">Pricing</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card mb-3 price-item v12-price-card">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Free Plan</h5>
+                <p class="card-text v12-price mb-3 mb-xl-5"><sup>$</sup>29<span class="text-secondary fw-normal fs-6"> / month</span></p>
+                <ul class="mb-4 mb-xl-5">
+                  <li class="text-secondary mb-3"><i class="icon-check text-success pe-2"></i>Quam adipiscing vitae proin</li>
+                  <li class="text-secondary mb-3"><i class="icon-check text-success pe-2"></i>Nec feugiat nisl pretium
+                  </li>
+                  <li class="text-secondary mb-3"><i class="icon-check text-success pe-2"></i>Nulla at volutpat diam uteera</li>
+                  <li class="text-secondary mb-3 v12-notincluded"><i class="icon-cancel pe-2"></i>Pharetra massa massa ultricies</li>
+                  <li class="text-secondary mb-3 v12-notincluded"><i class="icon-cancel pe-2"></i>Massa ultricies mi quis hendrerit</li>
+                </ul>
+                <a href="#" class="btn btn-outline-primary">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card mb-3 price-item v12-price-card">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Business Plan</h5>
+                <p class="card-text v12-price mb-3 mb-xl-5"><sup>$</sup>29 <span class="text-secondary fw-normal fs-6"> /
+                    month</span></p>
+                <ul class="mb-4 mb-xl-5">
+                  <li class="text-secondary mb-3"><i class="icon-check text-success pe-2"></i>Quam adipiscing vitae
+                    proin</li>
+                  <li class="text-secondary mb-3"><i class="icon-check text-success pe-2"></i>Nec feugiat nisl pretium
+                  </li>
+                  <li class="text-secondary mb-3"><i class="icon-check text-success pe-2"></i>Nulla at volutpat diam
+                    uteera</li>
+                  <li class="text-secondary mb-3"><i class="icon-check text-success pe-2"></i>Pharetra massa massa
+                    ultricies</li>
+                  <li class="text-secondary mb-3"><i class="icon-check text-success pe-2"></i>Massa ultricies mi quis
+                    hendrerit</li>
+                </ul>
+                <a href="#" class="btn btn-outline-primary">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card mb-3 price-item v12-price-card">
+              <div class="card-body">
+                <h5 class="card-title mb-3">Developer Plan</h5>
+                <p class="card-text v12-price mb-3 mb-xl-5"><sup>$</sup>29 <span class="text-secondary fw-normal fs-6"> /
+                    month</span></p>
+                <ul class="mb-4 mb-xl-5">
+                  <li class="text-secondary mb-3"><i class="icon-check text-success pe-2"></i>Quam adipiscing vitae proin</li>
+                  <li class="text-secondary mb-3"><i class="icon-check text-success pe-2"></i>Nec feugiat nisl pretium
+                  </li>
+                  <li class="text-secondary mb-3"><i class="icon-check text-success pe-2"></i>Nulla at volutpat diam uteera</li>
+                  <li class="text-secondary mb-3"><i class="icon-check text-success pe-2"></i>Pharetra massa massa ultricies</li>
+                  <li class="text-secondary mb-3"><i class="icon-check text-success pe-2"></i>Massa ultricies mi quis hendrerit</li>
+                </ul>
+                <a href="#" class="btn btn-outline-primary">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="v12-testimonials">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-12">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide text-white text-center">
+                  <img src="./assets/img/testimonials-1.jpg" class="d-block w-100 v12-testimonials-photo rounded-circle"
+                    alt="Saul Goodman photo">
+                  <h3 class="mt-3 mb-1">Saul Goodman</h3>
+                  <p class="mb-2">Ceo & Founder</p>
+                  <div class="d-flex justify-content-center mb-4 text-warning">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <p class="mb-5 w-75 mx-auto"><i class="icon-quote-left text-white-50"></i> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    <i class="icon-quote-right text-white-50"></i></p>
+                </div>
+                <div class="swiper-slide text-white text-center">
+                  <img src="./assets/img/testimonials-2.jpg" class="d-block w-100 v12-testimonials-photo rounded-circle"
+                    alt="Sara Wilsson photo">
+                  <h3 class="mt-3 mb-1">Sara Wilsson</h3>
+                  <p class="mb-2">Designer</p>
+                  <div class="d-flex justify-content-center mb-4 text-warning">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <p class="mb-5 w-75 mx-auto"><i class="icon-quote-left text-white-50"></i>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    <i class="icon-quote-right text-white-50"></i></p>
+                </div>
+                <div class="swiper-slide text-white text-center">
+                  <img src="./assets/img/testimonials-3.jpg" class="d-block w-100 v12-testimonials-photo rounded-circle"
+                    alt="Jena Karlis photo">
+                  <h3 class="mt-3 mb-1">Jena Karlis</h3>
+                  <p class="mb-2">Store Owner</p>
+                  <div class="d-flex justify-content-center mb-4 text-warning">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <p class="mb-5 w-75 mx-auto"><i class="icon-quote-left text-white-50"></i>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.<i class="icon-quote-right text-white-50"></i></p>
+                </div>
+                <div class="swiper-slide text-white text-center">
+                  <img src="./assets/img/testimonials-4.jpg" class="d-block w-100 v12-testimonials-photo rounded-circle"
+                    alt="Matt Brandon photo">
+                  <h3 class="mt-3 mb-1">Matt Brandon</h3>
+                  <p class="mb-2">Freelancer</p>
+                  <div class="d-flex justify-content-center mb-4 text-warning">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <p class="mb-5 w-75 mx-auto"><i class="icon-quote-left text-white-50"></i>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                    <i class="icon-quote-right text-white-50"></i></p>
+                </div>
+                <div class="swiper-slide text-white text-center">
+                  <img src="./assets/img/testimonials-5.jpg" class="d-block w-100 v12-testimonials-photo rounded-circle"
+                    alt="John Larson photo">
+                  <h3 class="mt-3 mb-1">John Larson</h3>
+                  <p class="mb-2">Entrepreneur</p>
+                  <div class="d-flex justify-content-center mb-4 text-warning">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                  </div>
+                  <p class="mb-5 w-75 mx-auto"><i class="icon-quote-left text-white-50"></i>
+                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                    <i class="icon-quote-right text-white-50"></i></p>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section>
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-12 mb-5 position-relative">
+            <span class="v12-shadow d-none d-lg-block fw-bold text-center text-uppercase position-absolute">Frequently asked questions</span>
+            <h2 class="text-uppercase text-center fw-bold text v12-decoration pb-4">Frequently asked questions</h2>
+          </div>
+          <div class="col-12" data-aos="fade-up">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <i class="icon-question-circle-o pe-2 fs-5 text-primary"></i>
+                    Non consectetur a erat nam at lectus urna duis?
+                  </button>
+                </h3>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
+                    gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <i class="icon-question-circle-o pe-2 fs-5 text-primary"></i>
+                    Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                  </button>
+                </h3>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
+                    donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
+                    elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui..</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <i class="icon-question-circle-o pe-2 fs-5 text-primary"></i>
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+                  </button>
+                </h3>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
+                    elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque
+                    eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis
+                    sed odio morbi quis</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    <i class="icon-question-circle-o pe-2 fs-5 text-primary"></i>
+                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                  </button>
+                </h3>
+                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
+                    donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
+                    elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    <i class="icon-question-circle-o pe-2 fs-5 text-primary"></i>
+                    Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                  </button>
+                </h3>
+                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in.
+                    Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est.
+                    Purus gravida quis blandit turpis cursus in.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="v12-footer">
+    <div class="container text-white">
+      <div class="row justify-content-center text-center text-lg-start">
+        <div class="col-lg-5 col-md-12 mb-5">
+          <h2><a href="#" class="text-white fw-bolder">Logis</a></h2>
+          <p class="mb-4 v12-text">Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="d-flex gap-2 justify-content-center justify-content-lg-start">
+              <a href="#" class="v12-social text-center">
+                <svg fill='#ffffffcc' width="20px" height="auto" class="v12-icon-social icon-t"><use xlink:href="./assets/img/sprite.svg#icon-t"></use></svg>
+              </a>
+              <a href="#" class="v12-social text-center">
+                <svg fill='#ffffffcc' width="20px" height="auto" class="v12-icon-social icon-t"><use xlink:href="./assets/img/sprite.svg#icon-f"></use></svg>
+              </a>
+              <a href="#" class="v12-social text-center">
+                <svg fill='#ffffffcc' width="20px" height="auto" class="v12-icon-social icon-t"><use xlink:href="./assets/img/sprite.svg#icon-i"></use></svg>
+              </a>
+              <a href="#" class="v12-social text-center">
+                <svg fill='#ffffffcc' width="20px" height="auto" class="v12-icon-social icon-t"><use xlink:href="./assets/img/sprite.svg#icon-l"></use></svg>
+              </a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-6 mb-5">
+          <h6 class="mb-4">Useful Links</h6>
+          <ul class="v12-footer-links text-center text-lg-start">
+            <li class="mb-3"><a href="#">Home</a></li>
+            <li class="mb-3"><a href="#">About us</a></li>
+            <li class="mb-3"><a href="#">Services</a></li>
+            <li class="mb-3"><a href="#">Terms of service</a></li>
+            <li class="mb-3"><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6  mb-5">
+          <h6 class="mb-4">Our Services</h6>
+          <ul class="v12-footer-links text-center text-lg-start">
+            <li class="mb-3"><a href="#">Web Design</a></li>
+            <li class="mb-3"><a href="#">Web Development</a></li>
+            <li class="mb-3"><a href="#">Product Management</a></li>
+            <li class="mb-3"><a href="#">Marketing</a></li>
+            <li class="mb-3"><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-6 mb-5 v12-footer-contact">
+          <h6>Contact Us</h6>
+          <p>A108 Adam Street
+            New York, NY 535022
+            United States</p>
+          <p><span class="fw-bolder">Phone:</span> +1 5589 55488 55</p>
+          <p><span class="fw-bolder">Email:</span> info@example.com</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p class="text-center">© Copyright Logis. All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="modalQuote" tabindex="-1" aria-labelledby="modalQuoteLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalQuoteLabel">Get a quote</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Vel nobis odio laboriosam et hic voluptatem. Inventore vitae totam. Rerum repellendus enim linead sero park flows.</p>
+          <div class="mb-4 row">
+            <div class="mb-3 col-lg-6">
+              <label for="departureCityInput" class="form-label">City of Departure</label>
+              <input type="text" list="datalistOptions" class="form-control" id="departureCityInput" placeholder="Lviv">
+              <datalist id="datalistOptions">
+                <option value="San Francisco">
+                <option value="New York">
+                <option value="Seattle">
+                <option value="Los Angeles">
+                <option value="Chicago">
+              </datalist>
+            </div>
+            <div class="mb-3 col-lg-6">
+              <label for="deliveryCityInput" class="form-label">Delivery City</label>
+              <input type="text" list="datalistOptions1" class="form-control" id="deliveryCityInput" placeholder="Kyiv">
+              <datalist id="datalistOptions1">
+                <option value="San Francisco">
+                <option value="New York">
+                <option value="Seattle">
+                <option value="Los Angeles">
+                <option value="Chicago">
+              </datalist>
+            </div>
+            <div class="mb-3 col-lg-6">
+              <label for="weightInput" class="form-label">Total Weight (kg)</label>
+              <input type="number" class="form-control" id="weightInput" placeholder="30">
+            </div>
+            <div class="mb-3 col-lg-6">
+              <label for="dimensionsInput" class="form-label">Dimensions (cm)</label>
+              <input type="number" class="form-control" id="dimensionsInput" placeholder="150">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="NameInput" class="form-label">Your Name</label>
+            <input type="email" class="form-control" id="NameInput" placeholder="Oleksandr">
+          </div>
+          <div class="mb-3">
+            <label for="EmailInput" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="EmailInput" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="MessageTextarea" class="form-label">Message</label>
+            <textarea class="form-control" id="MessageTextarea" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Get a quote</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modalVideo" tabindex="-1" aria-labelledby="modalVideoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class='embed-container'><iframe src='https://www.youtube.com/embed//LXb3EKWsInQ' frameborder='0'
+              allowfullscreen></iframe></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./assets/js/swiper.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
